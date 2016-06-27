@@ -1,0 +1,21 @@
+//
+//  KSHeader.pch
+//  HSH
+//
+//  Created by kangshibiao on 16/5/17.
+//  Copyright © 2016年 宋丰. All rights reserved.
+//
+
+#ifndef KSHeader_pch
+#define KSHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "KSHeader.h"
+#import "KSTool.h"
+#import "BaseTableViewCell.h"
+#import "KSRequestManager.h"
+#import <UIImageView+WebCache.h>
+#import <AFNetworking.h>
+#import "KSBaseViewController.h"
+#endif /* KSHeader_pch */

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBr-lU-DfK">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="34" y="7" width="10" height="10"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="去结算" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1L-5T-Z1M">
+                    <rect key="frame" x="487" y="0.0" width="113" height="36"/>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.38431372549999998" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="S1L-5T-Z1M" secondAttribute="height" multiplier="113:36" id="qx9-eM-Xjl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="qx9-eM-Xjl"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="qx9-eM-Xjl"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="S1L-5T-Z1M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BF5-c1-mIi"/>
+                <constraint firstAttribute="trailing" secondItem="S1L-5T-Z1M" secondAttribute="trailing" id="CrU-cc-4yN"/>
+                <constraint firstItem="S1L-5T-Z1M" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="113:600" id="ThU-cD-tes"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="sBr-lU-DfK"/>
+                    <exclude reference="S1L-5T-Z1M"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="BF5-c1-mIi"/>
+                    <exclude reference="CrU-cc-4yN"/>
+                    <exclude reference="ThU-cD-tes"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="sBr-lU-DfK"/>
+                    <include reference="S1L-5T-Z1M"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="BF5-c1-mIi"/>
+                    <include reference="CrU-cc-4yN"/>
+                    <include reference="ThU-cD-tes"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="211" y="409"/>
+        </view>
+    </objects>
+</document>

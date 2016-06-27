@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "AppDelegate.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    AppDelegate * window = [UIApplication sharedApplication].delegate;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        window.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[DryCleanersVC new]];
+    });
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
